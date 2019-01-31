@@ -1,0 +1,13 @@
+div.task.highlighted {
+  box-shadow: 0 10px 20px 0 #f00;
+}
+
+div.task.highlighted input[type="radio"].highlighted {
+  box-shadow: 7px 7px 8px 5px #f00;
+  opacity: 1;
+}
+
+.tsk-head.tsk-block {
+    background-color: #3CB371;
+    color:  #000000;
+}

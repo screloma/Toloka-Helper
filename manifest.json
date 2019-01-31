@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Toloka Helper",
+  "description": "To speedrun gradulee",
+  "version": "1.0",
+
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/16.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://toloka.yandex.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://toloka.yandex.ru/task/*"],
+      "js": ["js/jquery.js", "db.js", "js/top.js"],
+      "css": ["css/top.css"]
+    },
+    {
+      "matches": ["https://iframe-toloka.com/"],
+      "js": ["js/jquery.js", "db.js", "js/routines.js", "js/iframe.js"],
+      "css": ["css/iframe.css"],
+      "all_frames": true
+    }
+  ]
+}
