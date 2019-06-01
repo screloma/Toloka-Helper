@@ -1,3 +1,3 @@
 # Toloka-Helper
 
-A Chrome extensio with QoL-changes to Toloka.
+A Chrome extension with QoL-changes to Toloka.
